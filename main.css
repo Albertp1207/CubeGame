@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+.cube {	
+	width: 400px;
+	height: 400px;
+	background-color: #DBD7D7;
+	border-top: 3px solid red;
+	border-right: 3px solid blue;
+	border-bottom: 3px solid green;
+	border-left: 3px solid purple;
+}
+.arrow {
+	border-radius: 50% 50% 5px 5px;
+	width: 8px;
+	height: 190px;
+	background-color: #000000;
+	position: relative;
+	left: 196px;
+	top: 10px;
+	display: inline-block;	
+	transform-origin: 50% 100%;	
+}
+button {
+	padding: 10px;
+	background-color: #5B5050;
+	color: white;
+}
+.main {
+	margin: 0 auto;
+	width: 400px;
+}
+.trueClickCount {
+	background-color: #DDDCDC;
+	padding: 10px;
+	margin: 0;
+}
+.trueClickCountAction {
+	background-color: #C9C2C2;
+}
+#trueClickCounts {
+	float: right;
+}
+#clickButton {
+	display: none;
+}
+@media screen and (max-width: 420px) {
+   .cube {
+		width: 290px;
+		height: 290px;
+	}
+	.main {
+		width: 290px;
+	}
+	.arrow {
+		width: 4px;
+		height: 115px;
+		left: 143px;
+		top: 30px;
+		border-radius: 130px 130px 200px 200px;
+	}
+}
+@media screen and (max-width: 260px) {
+	.cube {
+		width: 220px;
+		height: 220px;
+	}
+	.main {
+		width: 220px;
+	}
+	.arrow {
+		width: 2px;
+		height: 92px;
+		left: 109px;
+		top: 18px;
+	}
+}
